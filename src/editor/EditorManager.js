@@ -710,8 +710,8 @@ define(function (require, exports, module) {
      * The second argument is an instantiated instance of the custom viewer that is ready to display 
      * files.
      * 
-     * @param {!String} languageId, i.e. image or audio to identify a language known to LanguageManager 
-     * @param {!Object} provider custom view provider
+     * @param {!String} languageId, i.e. string such as image, audio, etc to identify a language known to LanguageManager 
+     * @param {!Object} provider custom view provider instance
      */
     function registerCustomViewerProvider(langId, provider) {
         if (!_customViewerRegistry[langId]) {
